@@ -1,0 +1,113 @@
+:root{
+    --background-color: #3535ec;
+    --accent_color: #f70d68;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOMEPAGE */
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.container{
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 16px;
+    margin-top: 36px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff ;
+}
+
+a:hover{
+    color: var(--accent_color);
+}
+
+/* BASE GAME STRUCTURE */
+
+.board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.game-area{
+    padding: 12px;
+    position: relative;
+
+}
+
+.game-data{
+    padding: 12px;
+
+    width: 240px;
+
+}
+
+h1{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* RESULT ALERT */
+
+.game-alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px;
+}
+
+.game-alert-message{
+    text-align: center;
+    background-color: rgba(247, 13, 104, 0.9);
+    font-size: 40px;
+    padding: 20px;
+}
+
+/* AGGIUNGO  HOME BUTTON*/
+.home-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
